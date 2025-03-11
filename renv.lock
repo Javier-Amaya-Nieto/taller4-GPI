@@ -1,0 +1,291 @@
+{
+  "R": {
+    "Version": "4.3.0",
+    "Repositories": [
+      {
+        "Name": "CRAN",
+        "URL": "https://packagemanager.posit.co/cran/latest"
+      }
+    ]
+  },
+  "Packages": {
+    "Rcpp": {
+      "Package": "Rcpp",
+      "Version": "1.0.10",
+      "Source": "Repository",
+      "Title": "Seamless R and C++ Integration",
+      "Date": "2023-01-12",
+      "Author": "Dirk Eddelbuettel, Romain Francois, JJ Allaire, Kevin Ushey, Qiang Kou, Nathan Russell, Inaki Ucar, Douglas Bates and John Chambers",
+      "Maintainer": "Dirk Eddelbuettel <edd@debian.org>",
+      "Description": "The 'Rcpp' package provides R functions as well as C++ classes which offer a seamless integration of R and C++. Many R data types and objects can be mapped back and forth to C++ equivalents which facilitates both writing of new code as well as easier integration of third-party libraries. Documentation about 'Rcpp' is provided by several vignettes included in this package, via the 'Rcpp Gallery' site at <https://gallery.rcpp.org>, the paper by Eddelbuettel and Francois (2011, <doi:10.18637/jss.v040.i08>), the book by Eddelbuettel (2013, <doi:10.1007/978-1-4614-6868-4>) and the paper by Eddelbuettel and Balamuta (2018, <doi:10.1080/00031305.2017.1375990>); see 'citation(\"Rcpp\")' for details.",
+      "Imports": [
+        "methods",
+        "utils"
+      ],
+      "Suggests": [
+        "tinytest",
+        "inline",
+        "rbenchmark",
+        "pkgKitten (>= 0.1.2)"
+      ],
+      "URL": "https://www.rcpp.org, https://dirk.eddelbuettel.com/code/rcpp.html, https://github.com/RcppCore/Rcpp",
+      "License": "GPL (>= 2)",
+      "BugReports": "https://github.com/RcppCore/Rcpp/issues",
+      "MailingList": "rcpp-devel@lists.r-forge.r-project.org",
+      "RoxygenNote": "6.1.1",
+      "NeedsCompilation": "yes",
+      "Repository": "CRAN"
+    },
+    "corrplot": {
+      "Package": "corrplot",
+      "Version": "0.95",
+      "Source": "Repository",
+      "Type": "Package",
+      "Title": "Visualization of a Correlation Matrix",
+      "Date": "2024-10-14",
+      "Authors@R": "c( person('Taiyun', 'Wei', email = 'weitaiyun@gmail.com', role = c('cre', 'aut')), person('Viliam', 'Simko', email = 'viliam.simko@gmail.com', role = 'aut'), person('Michael', 'Levy', email = 'michael.levy@healthcatalyst.com', role = 'ctb'), person('Yihui', 'Xie', email = 'xie@yihui.name', role = 'ctb'), person('Yan', 'Jin', email = 'jyfeather@gmail.com', role = 'ctb'), person('Jeff', 'Zemla', email = 'zemla@wisc.edu', role = 'ctb'), person('Moritz', 'Freidank', email = 'freidankm@googlemail.com', role = 'ctb'), person('Jun', 'Cai', email = 'cai-j12@mails.tsinghua.edu.cn', role = 'ctb'), person('Tomas', 'Protivinsky', email = 'tomas.protivinsky@gmail.com', role = 'ctb') )",
+      "Maintainer": "Taiyun Wei <weitaiyun@gmail.com>",
+      "Suggests": [
+        "seriation",
+        "knitr",
+        "RColorBrewer",
+        "rmarkdown",
+        "magrittr",
+        "prettydoc",
+        "testthat"
+      ],
+      "Description": "Provides a visual exploratory tool on correlation matrix that supports automatic variable reordering to help detect hidden patterns among variables.",
+      "License": "MIT + file LICENSE",
+      "URL": "https://github.com/taiyun/corrplot",
+      "BugReports": "https://github.com/taiyun/corrplot/issues",
+      "VignetteBuilder": "knitr",
+      "RoxygenNote": "7.2.1",
+      "NeedsCompilation": "no",
+      "Author": "Taiyun Wei [cre, aut], Viliam Simko [aut], Michael Levy [ctb], Yihui Xie [ctb], Yan Jin [ctb], Jeff Zemla [ctb], Moritz Freidank [ctb], Jun Cai [ctb], Tomas Protivinsky [ctb]",
+      "Repository": "CRAN"
+    },
+    "here": {
+      "Package": "here",
+      "Version": "1.0.1",
+      "Source": "Repository",
+      "Title": "A Simpler Way to Find Your Files",
+      "Date": "2020-12-13",
+      "Authors@R": "c(person(given = \"Kirill\", family = \"M\\u00fcller\", role = c(\"aut\", \"cre\"), email = \"krlmlr+r@mailbox.org\", comment = c(ORCID = \"0000-0002-1416-3412\")), person(given = \"Jennifer\", family = \"Bryan\", role = \"ctb\", email = \"jenny@rstudio.com\", comment = c(ORCID = \"0000-0002-6983-2759\")))",
+      "Description": "Constructs paths to your project's files. Declare the relative path of a file within your project with 'i_am()'. Use the 'here()' function as a drop-in replacement for 'file.path()', it will always locate the files relative to your project root.",
+      "License": "MIT + file LICENSE",
+      "URL": "https://here.r-lib.org/, https://github.com/r-lib/here",
+      "BugReports": "https://github.com/r-lib/here/issues",
+      "Imports": [
+        "rprojroot (>= 2.0.2)"
+      ],
+      "Suggests": [
+        "conflicted",
+        "covr",
+        "fs",
+        "knitr",
+        "palmerpenguins",
+        "plyr",
+        "readr",
+        "rlang",
+        "rmarkdown",
+        "testthat",
+        "uuid",
+        "withr"
+      ],
+      "VignetteBuilder": "knitr",
+      "Encoding": "UTF-8",
+      "LazyData": "true",
+      "RoxygenNote": "7.1.1.9000",
+      "Config/testthat/edition": "3",
+      "NeedsCompilation": "no",
+      "Author": "Kirill Müller [aut, cre] (<https://orcid.org/0000-0002-1416-3412>), Jennifer Bryan [ctb] (<https://orcid.org/0000-0002-6983-2759>)",
+      "Maintainer": "Kirill Müller <krlmlr+r@mailbox.org>",
+      "Repository": "CRAN"
+    },
+    "openxlsx": {
+      "Package": "openxlsx",
+      "Version": "4.2.8",
+      "Source": "Repository",
+      "Type": "Package",
+      "Title": "Read, Write and Edit xlsx Files",
+      "Date": "2025-01-25",
+      "Authors@R": "c(person(given = \"Philipp\", family = \"Schauberger\", role = \"aut\", email = \"philipp@schauberger.co.at\"), person(given = \"Alexander\", family = \"Walker\", role = \"aut\", email = \"Alexander.Walker1989@gmail.com\"), person(given = \"Luca\", family = \"Braglia\", role = \"ctb\"), person(given = \"Joshua\", family = \"Sturm\", role = \"ctb\"), person(given = \"Jan Marvin\", family = \"Garbuszus\", role = c(\"ctb\", \"cre\"), email = \"jan.garbuszus@ruhr-uni-bochum.de\"), person(given = \"Jordan Mark\", family = \"Barbone\", role = \"ctb\", email = \"jmbarbone@gmail.com\", comment = c(ORCID = \"0000-0001-9788-3628\")), person(given = \"David\", family = \"Zimmermann\", role = \"ctb\", email = \"david_j_zimmermann@hotmail.com\"), person(given = \"Reinhold\", family = \"Kainhofer\", role = \"ctb\", email = \"reinhold@kainhofer.com\"))",
+      "Description": "Simplifies the creation of Excel .xlsx files by providing a high level interface to writing, styling and editing worksheets. Through the use of 'Rcpp', read/write times are comparable to the 'xlsx' and 'XLConnect' packages with the added benefit of removing the dependency on Java.",
+      "License": "MIT + file LICENSE",
+      "URL": "https://ycphs.github.io/openxlsx/index.html, https://github.com/ycphs/openxlsx",
+      "BugReports": "https://github.com/ycphs/openxlsx/issues",
+      "Depends": [
+        "R (>= 3.3.0)"
+      ],
+      "Imports": [
+        "grDevices",
+        "methods",
+        "Rcpp",
+        "stats",
+        "stringi",
+        "utils",
+        "zip"
+      ],
+      "Suggests": [
+        "curl",
+        "formula.tools",
+        "knitr",
+        "rmarkdown",
+        "testthat"
+      ],
+      "LinkingTo": [
+        "Rcpp"
+      ],
+      "VignetteBuilder": "knitr",
+      "Encoding": "UTF-8",
+      "Language": "en-US",
+      "RoxygenNote": "7.3.2",
+      "Collate": "'CommentClass.R' 'HyperlinkClass.R' 'RcppExports.R' 'class_definitions.R' 'StyleClass.R' 'WorkbookClass.R' 'asserts.R' 'baseXML.R' 'borderFunctions.R' 'build_workbook.R' 'chartsheet_class.R' 'conditional_formatting.R' 'data-fontSizeLookupTables.R' 'helperFunctions.R' 'loadWorkbook.R' 'onUnload.R' 'openXL.R' 'openxlsx-package.R' 'openxlsx.R' 'openxlsxCoerce.R' 'readWorkbook.R' 'setWindowSize.R' 'sheet_data_class.R' 'utils.R' 'workbook_column_widths.R' 'workbook_read_workbook.R' 'workbook_write_data.R' 'worksheet_class.R' 'wrappers.R' 'writeData.R' 'writeDataTable.R' 'writexlsx.R' 'zzz.R'",
+      "LazyData": "true",
+      "NeedsCompilation": "yes",
+      "Author": "Philipp Schauberger [aut], Alexander Walker [aut], Luca Braglia [ctb], Joshua Sturm [ctb], Jan Marvin Garbuszus [ctb, cre], Jordan Mark Barbone [ctb] (<https://orcid.org/0000-0001-9788-3628>), David Zimmermann [ctb], Reinhold Kainhofer [ctb]",
+      "Maintainer": "Jan Marvin Garbuszus <jan.garbuszus@ruhr-uni-bochum.de>",
+      "Repository": "CRAN"
+    },
+    "renv": {
+      "Package": "renv",
+      "Version": "1.1.1",
+      "Source": "Repository",
+      "Type": "Package",
+      "Title": "Project Environments",
+      "Authors@R": "c( person(\"Kevin\", \"Ushey\", role = c(\"aut\", \"cre\"), email = \"kevin@rstudio.com\", comment = c(ORCID = \"0000-0003-2880-7407\")), person(\"Hadley\", \"Wickham\", role = c(\"aut\"), email = \"hadley@rstudio.com\", comment = c(ORCID = \"0000-0003-4757-117X\")), person(\"Posit Software, PBC\", role = c(\"cph\", \"fnd\")) )",
+      "Description": "A dependency management toolkit for R. Using 'renv', you can create and manage project-local R libraries, save the state of these libraries to a 'lockfile', and later restore your library as required. Together, these tools can help make your projects more isolated, portable, and reproducible.",
+      "License": "MIT + file LICENSE",
+      "URL": "https://rstudio.github.io/renv/, https://github.com/rstudio/renv",
+      "BugReports": "https://github.com/rstudio/renv/issues",
+      "Imports": [
+        "utils"
+      ],
+      "Suggests": [
+        "BiocManager",
+        "cli",
+        "compiler",
+        "covr",
+        "cpp11",
+        "devtools",
+        "gitcreds",
+        "jsonlite",
+        "jsonvalidate",
+        "knitr",
+        "miniUI",
+        "modules",
+        "packrat",
+        "pak",
+        "R6",
+        "remotes",
+        "reticulate",
+        "rmarkdown",
+        "rstudioapi",
+        "shiny",
+        "testthat",
+        "uuid",
+        "waldo",
+        "yaml",
+        "webfakes"
+      ],
+      "Encoding": "UTF-8",
+      "RoxygenNote": "7.3.2",
+      "VignetteBuilder": "knitr",
+      "Config/Needs/website": "tidyverse/tidytemplate",
+      "Config/testthat/edition": "3",
+      "Config/testthat/parallel": "true",
+      "Config/testthat/start-first": "bioconductor,python,install,restore,snapshot,retrieve,remotes",
+      "NeedsCompilation": "no",
+      "Author": "Kevin Ushey [aut, cre] (<https://orcid.org/0000-0003-2880-7407>), Hadley Wickham [aut] (<https://orcid.org/0000-0003-4757-117X>), Posit Software, PBC [cph, fnd]",
+      "Maintainer": "Kevin Ushey <kevin@rstudio.com>",
+      "Repository": "CRAN"
+    },
+    "rprojroot": {
+      "Package": "rprojroot",
+      "Version": "2.0.4",
+      "Source": "Repository",
+      "Title": "Finding Files in Project Subdirectories",
+      "Authors@R": "person(given = \"Kirill\", family = \"M\\u00fcller\", role = c(\"aut\", \"cre\"), email = \"kirill@cynkra.com\", comment = c(ORCID = \"0000-0002-1416-3412\"))",
+      "Description": "Robust, reliable and flexible paths to files below a project root. The 'root' of a project is defined as a directory that matches a certain criterion, e.g., it contains a certain regular file.",
+      "License": "MIT + file LICENSE",
+      "URL": "https://rprojroot.r-lib.org/, https://github.com/r-lib/rprojroot",
+      "BugReports": "https://github.com/r-lib/rprojroot/issues",
+      "Depends": [
+        "R (>= 3.0.0)"
+      ],
+      "Suggests": [
+        "covr",
+        "knitr",
+        "lifecycle",
+        "mockr",
+        "rlang",
+        "rmarkdown",
+        "testthat (>= 3.0.0)",
+        "withr"
+      ],
+      "VignetteBuilder": "knitr",
+      "Config/testthat/edition": "3",
+      "Encoding": "UTF-8",
+      "RoxygenNote": "7.2.3",
+      "NeedsCompilation": "no",
+      "Author": "Kirill Müller [aut, cre] (<https://orcid.org/0000-0002-1416-3412>)",
+      "Maintainer": "Kirill Müller <kirill@cynkra.com>",
+      "Repository": "CRAN"
+    },
+    "stringi": {
+      "Package": "stringi",
+      "Version": "1.7.12",
+      "Source": "Repository",
+      "Date": "2023-01-09",
+      "Title": "Fast and Portable Character String Processing Facilities",
+      "Description": "A collection of character string/text/natural language processing tools for pattern searching (e.g., with 'Java'-like regular expressions or the 'Unicode' collation algorithm), random string generation, case mapping, string transliteration, concatenation, sorting, padding, wrapping, Unicode normalisation, date-time formatting and parsing, and many more. They are fast, consistent, convenient, and - thanks to 'ICU' (International Components for Unicode) - portable across all locales and platforms. Documentation about 'stringi' is provided via its website at <https://stringi.gagolewski.com/> and the paper by Gagolewski (2022, <doi:10.18637/jss.v103.i02>).",
+      "URL": "https://stringi.gagolewski.com/, https://github.com/gagolews/stringi, https://icu.unicode.org/",
+      "BugReports": "https://github.com/gagolews/stringi/issues",
+      "SystemRequirements": "C++11, ICU4C (>= 55, optional)",
+      "Type": "Package",
+      "Depends": [
+        "R (>= 3.1)"
+      ],
+      "Imports": [
+        "tools",
+        "utils",
+        "stats"
+      ],
+      "Biarch": "TRUE",
+      "License": "file LICENSE",
+      "Author": "Marek Gagolewski [aut, cre, cph] (<https://orcid.org/0000-0003-0637-6028>), Bartek Tartanus [ctb], and others (stringi source code); Unicode, Inc. and others (ICU4C source code, Unicode Character Database)",
+      "Maintainer": "Marek Gagolewski <marek@gagolewski.com>",
+      "RoxygenNote": "7.2.1",
+      "Encoding": "UTF-8",
+      "NeedsCompilation": "yes",
+      "License_is_FOSS": "yes",
+      "Repository": "CRAN"
+    },
+    "zip": {
+      "Package": "zip",
+      "Version": "2.3.1",
+      "Source": "Repository",
+      "Title": "Cross-Platform 'zip' Compression",
+      "Authors@R": "c( person(\"Gábor\", \"Csárdi\", , \"csardi.gabor@gmail.com\", role = c(\"aut\", \"cre\")), person(\"Kuba\", \"Podgórski\", role = \"ctb\"), person(\"Rich\", \"Geldreich\", role = \"ctb\"), person(\"Posit Software, PBC\", role = c(\"cph\", \"fnd\")) )",
+      "Description": "Cross-Platform 'zip' Compression Library. A replacement for the 'zip' function, that does not require any additional external tools on any platform.",
+      "License": "MIT + file LICENSE",
+      "URL": "https://github.com/r-lib/zip, https://r-lib.github.io/zip/",
+      "BugReports": "https://github.com/r-lib/zip/issues",
+      "Suggests": [
+        "covr",
+        "processx",
+        "R6",
+        "testthat",
+        "withr"
+      ],
+      "Config/Needs/website": "tidyverse/tidytemplate",
+      "Config/testthat/edition": "3",
+      "Encoding": "UTF-8",
+      "RoxygenNote": "7.2.3",
+      "NeedsCompilation": "yes",
+      "Author": "Gábor Csárdi [aut, cre], Kuba Podgórski [ctb], Rich Geldreich [ctb], Posit Software, PBC [cph, fnd]",
+      "Maintainer": "Gábor Csárdi <csardi.gabor@gmail.com>",
+      "Repository": "CRAN"
+    }
+  }
+}
