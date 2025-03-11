@@ -31,3 +31,10 @@ try {
   Write-Error "Error al ejecutar el script de R: $($_.Exception.Message)"
 }
 
+try {
+  & $RscriptPath "$scriptDir\AnalisisCorrelacion.R"
+  Write-Host "Script de R ejecutado: $scriptPath"
+} catch {
+  Write-Error "Error al ejecutar el script de R: $($_.Exception.Message)"
+}
+
