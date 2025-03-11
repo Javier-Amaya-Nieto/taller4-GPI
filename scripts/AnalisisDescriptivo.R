@@ -28,11 +28,13 @@ write.xlsx(tabla_resumen, file.path(ruta_proyecto, "results/tables/tabla_resumen
 
 # Exportar gráficas
 png(file.path(ruta_proyecto, "results/figures/histograma_trasplantes.png"))
-hist(datos$Numero_trasplantes, main = "Distribución del Número de Trasplantes", xlab = "Número de Trasplantes", col = "yellow")
+
+hist(datos$Numero_trasplantes, main = "Distribución del Número de Trasplantes", xlab = "Número de Trasplantes", col = "red")
 dev.off()
 
 png(file.path(ruta_proyecto, "results/figures/histograma_visualizaciones.png"))
-hist(datos$Visualizaciones_serie, main = "Distribución de Visualizaciones de la Serie", xlab = "Visualizaciones", col = "brown")
+hist(datos$Visualizaciones_serie, main = "Distribución de Visualizaciones de la Serie", xlab = "Visualizaciones", col = "purple")
+
 dev.off()
 
 png(file.path(ruta_proyecto, "results/figures/boxplot_trasplantes_ano.png"))
