@@ -35,6 +35,6 @@ set.seed(123)
 datos <- generar_datos_simulados(n=100, start_year = 2010, finish_year = 2024, replace = TRUE)
 
 # Guardar datos crudos en la ruta especificada
-write.csv(datos, file.path(ruta_proyecto, "data/raw/datos_crudos.csv"), row.names = FALSE)
+write.csv(datos, file.path(ruta_proyecto, "data/raw/datos_crudos_simulated.csv"), row.names = FALSE)
 
 
